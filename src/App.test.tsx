@@ -10,6 +10,10 @@ describe("App", () => {
     expect(screen.getByText("Diagrams & visual systems")).toBeVisible();
     expect(screen.getByText("Characters & artifacts")).toBeVisible();
     expect(screen.getByText("Websites & prototypes")).toBeVisible();
+    expect(screen.getByRole("heading", { name: "Emergent Exoskeletons" })).toBeVisible();
+    expect(screen.getByRole("heading", { name: "UBSESS" })).toBeVisible();
+    expect(screen.getByText(/not presented as manufactured/i)).toBeVisible();
+    expect(screen.getByText(/community votes/i)).toBeVisible();
   });
 
   it("preserves the working truth-model blueprint workbench", () => {

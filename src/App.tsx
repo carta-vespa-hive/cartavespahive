@@ -80,6 +80,62 @@ const selectedWork = [
   },
 ];
 
+const exoskeletonStudy = [
+  {
+    image: "/work/emergent-exoskeleton-coat.jpg",
+    alt: "Long layered coat concept built from a porous fibrous shell material",
+    label: "Layered shell / full silhouette",
+  },
+  {
+    image: "/work/emergent-exoskeleton-material.jpg",
+    alt: "Macro study of a fibrous porous biomaterial",
+    label: "Porous membrane / material study",
+  },
+  {
+    image: "/work/emergent-exoskeleton-knit.jpg",
+    alt: "Knitwear concept crossed by an irregular fibrous exoskeleton",
+    label: "Knit integration / surface system",
+  },
+  {
+    image: "/work/emergent-exoskeleton-shell.jpg",
+    alt: "Sculptural wrapped top concept made from layered cellular material",
+    label: "Protective wrap / form study",
+  },
+];
+
+const ubsessStudy = [
+  {
+    image: "/work/ubsess-biomorphic-luxury.jpg",
+    alt: "Silver biomorphic mask and jewelry objects presented in a pearlescent luxury campaign",
+    label: "Biomorphic luxury / brand world",
+  },
+  {
+    image: "/work/ubsess-voting-dashboard.jpg",
+    alt: "UBSESS voting dashboard showing three community-selected fashion concepts",
+    label: "Community voting / concept selection",
+  },
+  {
+    image: "/work/ubsess-evolution-tree.jpg",
+    alt: "UBSESS capsule evolution tree connecting common, rare, epic, and legendary tiers",
+    label: "Capsule tiers / evolution logic",
+  },
+  {
+    image: "/work/ubsess-inventory-vault.jpg",
+    alt: "UBSESS inventory interface with capsule collection and evolution chamber",
+    label: "Inventory vault / collection system",
+  },
+  {
+    image: "/work/ubsess-sandal-concept.jpg",
+    alt: "Pair of pearlescent sculptural platform sandal concepts",
+    label: "Wearable object / sandal concept",
+  },
+  {
+    image: "/work/ubsess-capsule-jacket.jpg",
+    alt: "Transparent jacket concept with modular purple and copper capsule units",
+    label: "Modular garment / capsule attachment",
+  },
+];
+
 const process = [
   ["01", "Bring the source", "A sketch, folder, song, pet, business, system, story, or half-formed idea is enough to begin."],
   ["02", "Find the form", "We decide whether the idea wants to become a diagram, identity object, interface, image, or connected set."],
@@ -173,6 +229,58 @@ function App() {
                 </figcaption>
               </figure>
             ))}
+          </div>
+
+          <div className="case-studies" aria-label="Featured concept studies">
+            <article className="case-study case-study--exoskeleton">
+              <div className="case-study-heading">
+                <div>
+                  <p className="eyebrow">07 / Material futures</p>
+                  <h3 aria-label="Emergent Exoskeletons">Emergent<br />Exoskeletons</h3>
+                </div>
+                <div className="case-study-copy">
+                  <p>
+                    A biomorphic apparel study translating nest architecture into layered silhouettes,
+                    porous membranes, and fibrous protective shells. The series demonstrates a coherent
+                    material language across outerwear and knit forms.
+                  </p>
+                  <small>CONCEPT DIRECTION / APPAREL STUDY / NOT PRESENTED AS MANUFACTURED</small>
+                </div>
+              </div>
+              <div className="concept-gallery concept-gallery--exoskeleton">
+                {exoskeletonStudy.map((item) => (
+                  <figure key={item.image}>
+                    <img src={item.image} alt={item.alt} loading="lazy" />
+                    <figcaption>{item.label}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </article>
+
+            <article className="case-study case-study--ubsess">
+              <div className="case-study-heading">
+                <div>
+                  <p className="eyebrow">08 / Product-system concept</p>
+                  <h3>UBSESS</h3>
+                </div>
+                <div className="case-study-copy">
+                  <p>
+                    A concept-to-market ecosystem for collectible design: creators submit objects,
+                    the community votes, selected concepts move toward prototyping, and capsule tiers
+                    create a visual language for collecting, evolving, and trading.
+                  </p>
+                  <small>PRODUCT VISION / MARKETPLACE UX / WEARABLE OBJECTS / CONCEPT STAGE</small>
+                </div>
+              </div>
+              <div className="concept-gallery concept-gallery--ubsess">
+                {ubsessStudy.map((item) => (
+                  <figure key={item.image}>
+                    <img src={item.image} alt={item.alt} loading="lazy" />
+                    <figcaption>{item.label}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </article>
           </div>
         </section>
 
