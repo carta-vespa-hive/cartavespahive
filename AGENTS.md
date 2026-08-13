@@ -1,18 +1,19 @@
 # CVH agent rules
 
-## Product sentence
+## Studio sentence
 
-Carta Vespa Hive turns rough ideas into structurally coherent, labeled diagrams.
+Carta Vespa Hive directs rough source material into coherent visual forms: diagrams, artifacts, images, interfaces, and production-ready creative systems.
 
 ## Active product and repository boundary
 
-- This repository contains one active product: the clean Carta Vespa Hive diagram-foundry app.
+- This repository contains the Carta Vespa Hive multimodal studio website and its flagship Diagram Foundry workbench.
 - `src/` is the sole active application source.
 - Legacy CVH implementations are archived outside this repository. Do not copy, restore, nest, or reintroduce them here.
 - Quail's other projects are separate products and separate repositories.
-- Do not create an umbrella hierarchy, worlds directory, portfolio index, or project dashboard inside CVH.
-- A creator may use any app, artwork, tool, character, or process as the subject of a diagram. A subject is not a CVH sub-brand.
-- Preserve this boundary in every change. If work requires legacy code or another product, stop and keep that work outside this repository.
+- The site may present the foundry's commissioned practices and selected work, but it must not absorb the source code, product dashboards, or operational hierarchies of Quail's other projects.
+- Vespillery and other standalone products remain separate repositories and deployments. They may be referenced as work only when explicitly approved.
+- Add new practices through the shared foundry architecture rather than inventing a new top-level company for each capability.
+- Preserve this boundary in every change. If work requires another product's code, stop and keep that implementation outside this repository.
 
 ## Source of truth and current layout
 
@@ -20,15 +21,15 @@ Carta Vespa Hive turns rough ideas into structurally coherent, labeled diagrams.
 - `README.md` describes the current product and local workflow.
 - `index.html` is the Vite HTML shell.
 - `src/main.tsx` is the single React entry point.
-- `src/App.tsx` contains the current product page and truth-model blueprint editor.
-- `src/styles.css` contains the diagram-first visual system.
+- `src/App.tsx` contains the studio page and mounts the truth-model blueprint editor.
+- `src/styles.css` contains the studio visual system and workbench styling.
 - `src/lib/blueprint.ts` defines the typed truth/view document and immutable reducer.
 - `src/lib/blueprintValidation.ts` defines deterministic structural warnings.
 - `src/lib/blueprintExport.ts` defines the portable versioned JSON export.
 - `public/` is reserved for static assets when they are needed.
 - Root `package.json`, `package-lock.json`, `tsconfig.json`, and `vite.config.ts` are the active runtime and build configuration.
 
-The current app authors a typed truth model, projects it into an editable SVG blueprint, reports deterministic completeness warnings, and exports versioned JSON. It does not call a model, generate finished artwork, or perform AI inspection.
+The current studio page presents selected work and authors a typed truth model through its embedded workbench. The workbench projects truth into an editable SVG blueprint, reports deterministic completeness warnings, and exports versioned JSON. It does not call a model, generate finished artwork, or perform AI inspection.
 
 ## Workflow law
 
@@ -40,10 +41,10 @@ Do not skip Structure. Do not allow Expand to change approved spatial facts. Do 
 
 ## Visual direction
 
-- Diagram studio, annotated field guide, and contemporary editorial utility.
+- Multimodal foundry, annotated field guide, and contemporary editorial utility.
 - Warm paper, dark ink, functional color coding, modern sans-serif and mono typography.
 - No dark-luxury landing-page language.
-- No pyramids, generic hive decoration, film grain, parallax spectacle, or 3D background unless required by a diagram feature.
+- No generic hive decoration, film grain, parallax spectacle, or decorative 3D background unless it belongs to presented work.
 - Every visible element should clarify structure, state, or action.
 
 ## Engineering rules

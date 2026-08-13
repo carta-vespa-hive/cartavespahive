@@ -1,10 +1,12 @@
 # Carta Vespa Hive
 
-Carta Vespa Hive is a diagram foundry. Its truth-model blueprint editor turns rough system facts into a structurally coherent, labeled diagram through one workflow:
+Carta Vespa Hive is an independent multimodal foundry. It turns rough source material into diagrams, visual worlds, collectible artifacts, interactive experiences, and production-ready creative systems.
+
+The Diagram Foundry remains the flagship practice. Its truth-model blueprint editor turns rough system facts into a structurally coherent, labeled diagram through one workflow:
 
 > Structure → Expand → Inspect
 
-The active product does not contain or manage Quail's other projects. Apps, tools, artworks, characters, processes, and fictional systems are subjects that a creator can bring into CVH and turn into a diagram.
+The studio site curates CVH work and exposes the working Diagram Foundry blueprint editor. Vespillery and unrelated products remain separate repositories and deployments.
 
 ## Run locally
 
