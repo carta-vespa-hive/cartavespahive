@@ -109,7 +109,7 @@ function App() {
       <main>
         <section className="hero" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">Independent multimodal foundry / California</p>
+            <p className="eyebrow">Independent multimodal foundry</p>
             <h1>Difficult ideas,<br /><em>made visible.</em></h1>
             <p className="hero-lede">
               Carta Vespa Hive turns raw source material into diagrams, visual worlds,
